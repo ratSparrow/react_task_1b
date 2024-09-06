@@ -33,18 +33,18 @@ const AdminDashboardPage = () => {
 
   //Handler for logout
   const handleLogout = () => {
-    dispatch({ type: 'LOGIN', payload: '' });
+    dispatch({ type: 'LOGOUT', payload: '' });
     navigate('/');
   };
 
   // Handlers for pagination buttons
   const handlePrevPage = () => {
-    console.log("currentPage",currentPage)
+    // console.log("currentPage",currentPage)
     if (currentPage > 1) setCurrentPage(prev => prev - 1);
   };
 
   const handleNextPage = () => {
-    console.log("currentPage",currentPage)
+    // console.log("currentPage",currentPage)
     setCurrentPage(prev => prev + 1);
   };
 
